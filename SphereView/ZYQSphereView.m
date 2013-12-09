@@ -334,9 +334,13 @@
 	}		
 }
 
-#if __has_feature(objc_arc)
-#else
 - (void)dealloc {
+#if __has_feature(objc_arc)
+    pointMap=nil;
+    if ([_timer isValid]) {
+        [_timer invalidate];
+    }
+#else
 	[pointMap release];
     if ([_timer isValid]) {
         [_timer invalidate];
@@ -344,8 +348,7 @@
 	[_timer release];
     
     [super dealloc];
-}
 #endif
-
+}
 
 @end
