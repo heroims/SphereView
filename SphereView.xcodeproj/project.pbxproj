@@ -222,6 +222,7 @@
 				INFOPLIST_FILE = "SphereView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = SphereView;
+				PROVISIONING_PROFILE = "6AACA49D-3C66-4565-B975-52322449A8EC";
 			};
 			name = Debug;
 		};
@@ -235,6 +236,7 @@
 				INFOPLIST_FILE = "SphereView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = SphereView;
+				PROVISIONING_PROFILE = "6AACA49D-3C66-4565-B975-52322449A8EC";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

@@ -41,7 +41,7 @@ static PFMatrix PFMatrixMakeFromArray(NSInteger m, NSInteger n, CGFloat *data) {
     PFMatrix matrix = PFMatrixMake(m, n);
 
 	for (int i=0; i<m; i++) {
-		CGFloat *t = data+(i*sizeof(CGFloat));
+		CGFloat *t = data+(i*n);
 		for (int j=0; j<n; j++) {
 			matrix.data[i][j] = *(t+j);
 		}
